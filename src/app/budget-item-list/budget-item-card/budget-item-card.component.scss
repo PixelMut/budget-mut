@@ -1,0 +1,90 @@
+@import '../../../main-styles';
+
+.root {
+  display: flex;
+  width: 100%;
+  position: relative;
+
+  &:hover{
+    .x-icon-button{
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .x-icon-button{
+    position: absolute;
+    height:34px;
+    width:34px;
+    background: $dark;
+    border-radius:50%;
+    right:-17px; // half of the width;
+    top:-17px; // half of the height;
+    background-image: url('../../../assets/delete_icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition:opacity 0.2s ease-out, transform 0.2s ease-out;
+    transform: scale(0);
+    opacity: 0;
+
+    &:hover{
+      transform:scale(1.2);
+      cursor: pointer;
+    }
+  }
+
+
+}
+
+  .budget-item{
+    display: flex;
+    width: 100%;
+    background-color: $light-grey;
+    padding:10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: background-color 0.1s ease-out;
+    &:hover{
+      background-color: darken($light-grey, 2%);
+    }
+    .description{
+      display:flex;
+      flex-grow: 1;
+      font-size: 18px;
+      margin-left: 5px;
+
+      // vertically center the children element
+      align-items: center;
+    }
+
+    .amount{
+      padding : 5px;
+      border-radius : 3px;
+
+    }
+
+
+  }
+
+
+.expense{
+  p{
+    color:$red;
+  }
+
+  .amount{
+    background-color: $light-red;
+  }
+}
+
+.income{
+  p{
+    color:$green;
+  }
+
+  .amount{
+    background-color: $light-green;
+  }
+}
