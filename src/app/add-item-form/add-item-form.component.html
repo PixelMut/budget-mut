@@ -12,13 +12,16 @@
       <!--field description-->
       <div class="field">
         <p class="control">
-          <input required type="text" name="description" class="input"  placeholder="Description" [ngModel]="item.desciption">
+          <input required type="text" name="description" class="input"  placeholder="Description" [ngModel]="item.description">
         </p>
       </div>
 
       <!--button add-->
       <div class="field is-narrow">
-        <button [disabled]="!itemForm.valid" type="submit" class="button is-primary" >Add</button>
+        <button [disabled]="!itemForm.valid" type="submit" class="button"  [ngClass]="{ 'is-primary' : isNewItem, 'is-success' : !isNewItem}" >
+          <p *ngIf="isNewItem">Add</p>
+          <p *ngIf="!isNewItem">Save</p>
+        </button>
       </div>
     </div>
   </div>
