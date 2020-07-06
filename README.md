@@ -3,13 +3,13 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
 
 # This project uses Bulma package for scss : 
-  ==> npm install bulma
-  ==> integration of custom scss from https://bulma.io/documentation/customize/with-sass-cli/ part 6 into main-style
-  ==> changing the colors and font size ( purple, 18px)
-  ==> usage of SASS to NEST
+  - npm install bulma
+  - integration of custom scss from https://bulma.io/documentation/customize/with-sass-cli/ part 6 into main-style
+  - changing the colors and font size ( purple, 18px)
+  - usage of SASS to NEST
 
 # This project uses Angular Material to display modals
-  ==> ng add @angular/material OR npm install --save @angular/material @angular/cdk @angular/animations ( depending on angular version)
+  - ng add @angular/material OR npm install --save @angular/material @angular/cdk @angular/animations ( depending on angular version)
 
 
 ## Development server
